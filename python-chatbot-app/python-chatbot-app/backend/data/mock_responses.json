@@ -1,0 +1,21 @@
+{
+  "keyword_responses": [
+    {
+      "keywords": ["hello", "hi", "hey"],
+      "response": "Hello! I am running in $0 mock mode right now, so my reply is coming from a local JSON file instead of the OpenAI API."
+    },
+    {
+      "keywords": ["study", "assignment", "school"],
+      "response": "For school tasks, I can help break the problem into smaller steps, summarize topics, and suggest a simple plan you can follow."
+    },
+    {
+      "keywords": ["python", "fastapi", "backend"],
+      "response": "This version uses a Python backend with FastAPI, which makes it beginner-friendly and easy to read if you are more comfortable with Python."
+    },
+    {
+      "keywords": ["context", "history", "memory"],
+      "response": "This chatbot keeps short-term context by sending recent messages from the current chat history with each request. That keeps the conversation coherent without needing a database."
+    }
+  ],
+  "fallback_template": "Mock mode reply: I received your message: '{message}'. In API mode, this would be sent to the OpenAI Responses API and the model's answer would be returned here."
+}

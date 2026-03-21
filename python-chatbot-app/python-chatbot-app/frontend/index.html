@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Chatbot App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="card">
+      <div class="header">
+        <div>
+          <h1>Simple Chatbot</h1>
+          <p>Python backend + free mock mode</p>
+        </div>
+        <span id="modeBadge" class="badge">Checking...</span>
+      </div>
+
+      <div class="sample-prompts">
+        <button class="prompt-btn">Explain what mock mode means</button>
+        <button class="prompt-btn">Give me a Python study plan</button>
+        <button class="prompt-btn">How do you manage context?</button>
+        <button class="prompt-btn">Why do sample prompts help users?</button>
+      </div>
+
+      <div id="chatHistory" class="chat-history"></div>
+
+      <form id="chatForm" class="chat-form">
+        <input id="messageInput" type="text" placeholder="Type your message here..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
